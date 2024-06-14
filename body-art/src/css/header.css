@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-home {
+  background-image: url("../images/header1.png");
+  background-size: cover; /* Чтобы картинка покрывала весь хэдер */
+  background-position: center; /* Центрирование картинки */
+  background-repeat: no-repeat; /* Предотвращает повторение картинки */
+  width: 100%;
+  height: 100vh; /* Высота хедера составляет 50% от высоты видимой области */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Цвет текста */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+
+.header-tattoo {
+  background-image: url("../images/header2.png");
+  background-size: cover; /* Чтобы картинка покрывала весь хэдер */
+  background-position: center; /* Центрирование картинки */
+  background-repeat: no-repeat; /* Предотвращает повторение картинки */
+  width: 100%;
+  height: 100vh; /* Высота хедера составляет 50% от высоты видимой области */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Цвет текста */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+
+.header-price {
+  background-image: url("../images/header3.png");
+  background-size: cover; /* Чтобы картинка покрывала весь хэдер */
+  background-position: center; /* Центрирование картинки */
+  background-repeat: no-repeat; /* Предотвращает повторение картинки */
+  width: 100%;
+  height: 100vh; /* Высота хедера составляет 50% от высоты видимой области */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Цвет текста */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+.header-reviews {
+  background-image: url("../images/header4.png");
+  background-size: cover; /* Чтобы картинка покрывала весь хэдер */
+  background-position: center; /* Центрирование картинки */
+  background-repeat: no-repeat; /* Предотвращает повторение картинки */
+  width: 100%;
+  height: 100vh; /* Высота хедера составляет 50% от высоты видимой области */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Цвет текста */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+.header-references {
+  background-image: url("../images/header5.png");
+  background-size: cover; /* Чтобы картинка покрывала весь хэдер */
+  background-position: center; /* Центрирование картинки */
+  background-repeat: no-repeat; /* Предотвращает повторение картинки */
+  width: 100%;
+  height: 100vh; /* Высота хедера составляет 50% от высоты видимой области */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Цвет текста */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+}
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls button {
+  margin: 0 10px;
+}
+
+header svg {
+  width: 400px; /* Начальный размер SVG */
+  height: auto;
+  text-align: center;
+}
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  header {
+    font-size: 22px;
+  }
+  header svg {
+    width: 350px;
+  }
+  .header-home {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .header-tattoo {
+    width: auto;
+    height: auto;
+  }
+  .header-references {
+    width: auto;
+    height: auto;
+    justify-content: center;
+
+  }
+  .header-price {
+    width: auto;
+    height: auto;
+  }
+  .header-reviews {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Large smartphones and small tablets */
+@media (max-width: 768px) {
+  header {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+    padding: 10px;
+  }
+}

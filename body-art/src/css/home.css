@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-family: "Jost", sans-serif;
+}
+
+.rectangles-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow rectangles to wrap to new lines */
+  justify-content: space-between;
+  margin: 1%; /* Simplified margin */
+}
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #bdada0;
+  width: calc(100% / 4 - 4%); /* Adjusted width for better responsiveness */
+  margin: 2%;
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+.rectangle svg {
+  align-self: center; /* Center svg horizontally */
+  margin: 10% 0; /* Simplified vertical margin */
+}
+.rect-h2 {
+  font-family: "Megrim", system-ui;
+  font-size: 32px;
+  color: black;
+}
+.rect-p {
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  color: white;
+  margin: 5% 2% 10%; /* Simplified margin */
+}
+
+.masters-container {
+  background-color: black;
+  margin-top: 5%;
+  padding: 0 5%; /* Добавим отступы для управления внутренним пространством */
+  box-sizing: border-box; /* Включаем padding и border в общую ширину и высоту элемента */
+}
+
+.masters-container h2 {
+  color: white;
+  padding: 5%;
+  text-align: center; /* Центрируем заголовок */
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-text {
+  flex: 1 1 calc(33.33% - 10px); /* Три элемента в ряду с учетом отступов */
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  text-align: center; /* Центрируем текст и изображения */
+  margin: 5px;
+}
+
+.photo-text img {
+  width: 100%;
+  height: auto; /* Сохраняем пропорции */
+}
+
+.photo-text h3 {
+  font-family: "Megrim", system-ui;
+  color: white;
+  font-size: 40px;
+}
+
+.photo-text p {
+  color: white;
+  font-family: "Megrim", system-ui;
+  font-size: 24px;
+  margin-bottom: 10%;
+}
+
+.info-container {
+  margin-top: 5%;
+  background-color: #bdada0;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+.svg-text {
+  display: flex; /* Ensure flexbox properties are applied */
+  flex-direction: column;
+  width: calc(100% / 3 - 4%); /* Adjusted width for better responsiveness */
+  margin: 2%;
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+.svg-text svg {
+  align-self: center; /* Center SVG horizontally */
+  margin: 10% 0; /* Simplified vertical margin */
+}
+.text-svg {
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .rectangle {
+    width: calc(100% / 2 - 4%); /* Two rectangles per row */
+  }
+
+  .rect-h2 {
+    font-size: 28px;
+  }
+
+  .rect-p {
+    font-size: 18px;
+  }
+
+  .svg-text {
+    width: calc(100% / 2 - 4%); /* Two items per row */
+  }
+
+  .text-svg {
+    font-size: 18px;
+  }
+
+  .photo-text {
+    flex: 1 1 calc(50% - 10px); /* Два элемента в ряду */
+  }
+
+  .photo-text h3 {
+    font-size: 36px;
+  }
+
+  .photo-text p {
+    font-size: 22px;
+  }
+}
+
+/* Large smartphones and small tablets */
+@media (max-width: 768px) {
+  .rectangle {
+    width: 100%; /* One rectangle per row */
+    margin: 2% 0; /* Adjust margin for single column layout */
+  }
+
+  .rect-h2 {
+    font-size: 24px;
+  }
+
+  .rect-p {
+    font-size: 16px;
+  }
+
+  .svg-text {
+    width: 100%; /* One item per row */
+    margin: 2% 0; /* Adjust margin for single column layout */
+  }
+
+  .text-svg {
+    font-size: 16px;
+  }
+
+  .photo-text {
+    flex: 1 1 calc(100% - 10px); /* Один элемент в ряду */
+  }
+
+  .photo-text h3 {
+    font-size: 32px;
+  }
+
+  .photo-text p {
+    font-size: 20px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .rect-h2 {
+    font-size: 20px;
+  }
+
+  .rect-p {
+    font-size: 14px;
+  }
+  .text-svg {
+    font-size: 14px;
+  }
+  .photo-text h3 {
+    font-size: 28px;
+  }
+
+  .photo-text p {
+    font-size: 18px;
+  }
+}

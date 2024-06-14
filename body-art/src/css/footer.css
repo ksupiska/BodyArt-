@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.content-container {
+  margin-top: 5%;
+  background-color: black;
+  padding: 5%;
+}
+.content {
+  margin-top: 2%;
+  color: white;
+  font-family: "Jost", sans-serif;
+}
+.content h3 {
+  font-size: 26px;
+}
+.content p {
+  font-size: 20px;
+}
+.last {
+  margin-bottom: 2%;
+}
+.content a {
+  color: white;
+  text-decoration-style:wavy;
+  font-family: "Megrim", system-ui;
+}
+.content a:hover{
+    color: aqua;
+    transition: color 2s ease;
+}

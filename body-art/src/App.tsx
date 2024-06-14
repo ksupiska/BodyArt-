@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Home from './main/Home';
+import HeaderHomeContainer from './components/HeaderHome';
+
+import FooterContainer from './components/Footer';
+
+const AppContent: React.FC = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/tattoo" element={<Tattoo />} />
+        <Route path="/price" element={<Price />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/references" element={<References />} /> */}
+      </Routes>
+      {/* <FooterContainer /> */}
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeaderHomeContainer />
+              <Home />
+              <FooterContainer />
+            </>
+          }
+        />
+        </Routes>
+      </Router>
     </div>
   );
 }
