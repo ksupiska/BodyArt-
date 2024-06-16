@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .price-form {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bdada0c0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Jost", sans-serif;
+    margin-top: 5%;
+  }
+  
+  .price-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+  }
+  
+  .price-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 24px;
+  }
+  
+  .price-form input,
+  .price-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+  }
+  
+  .price-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b9aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+  }
+  
+  .price-form button:hover {
+    background-color: #78cdffcf;
+    transition: background-color 1s ease;
+  }
+  
+  .price-form .price-result {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .price-form .price-result h3 {
+    margin: 0;
+  }
+  
+  .text-container {
+    margin: 7%;
+    font-family: "Jost", sans-serif;
+  }
+  
+  .text-container h2 {
+    font-size: 40px;
+    margin-top: 5%;
+  }
+  .text-container h3 {
+    font-size: 30px;
+    margin-top: 2%;
+  }
+  .text-container p {
+    font-size: 24px;
+    margin: 2%;
+    text-align: justify;
+  }
+  
+  /* Tablets and small desktops */
+  @media (max-width: 1024px) {
+      .price-form {
+        max-width: 70%;
+        padding: 15px;
+        margin-top: 7%;
+      }
+    
+      .price-form h2 {
+        font-size: 28px;
+      }
+    
+      .price-form label {
+        font-size: 22px;
+      }
+    
+      .price-form input,
+      .price-form select {
+        font-size: 22px;
+        padding: 8px;
+      }
+    
+      .price-form button {
+        font-size: 22px;
+      }
+    
+      .price-form .price-result {
+        font-size: 22px;
+      }
+    
+      .text-container {
+        margin: 5%;
+      }
+    
+      .text-container h2 {
+        font-size: 36px;
+      }
+    
+      .text-container h3 {
+        font-size: 28px;
+      }
+    
+      .text-container p {
+        font-size: 22px;
+      }
+    }
+    
+    /* Large smartphones and small tablets */
+    @media (max-width: 768px) {
+      .price-form {
+        max-width: 90%;
+        padding: 10px;
+        margin-top: 10%;
+      }
+    
+      .price-form h2 {
+        font-size: 26px;
+      }
+    
+      .price-form label {
+        font-size: 20px;
+      }
+    
+      .price-form input,
+      .price-form select {
+        font-size: 20px;
+        padding: 6px;
+      }
+    
+      .price-form button {
+        font-size: 20px;
+      }
+    
+      .price-form .price-result {
+        font-size: 20px;
+      }
+    
+      .text-container {
+        margin: 3%;
+      }
+    
+      .text-container h2 {
+        font-size: 32px;
+      }
+    
+      .text-container h3 {
+        font-size: 26px;
+      }
+    
+      .text-container p {
+        font-size: 20px;
+      }
+    }
+    
+    /* Smartphones */
+    @media (max-width: 480px) {
+      .price-form {
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 15%;
+      }
+    
+      .price-form h2 {
+        font-size: 24px;
+      }
+    
+      .price-form label {
+        font-size: 18px;
+      }
+    
+      .price-form input,
+      .price-form select {
+        font-size: 18px;
+        padding: 5px;
+      }
+    
+      .price-form button {
+        font-size: 18px;
+      }
+    
+      .price-form .price-result {
+        font-size: 18px;
+      }
+    
+      .text-container {
+        margin: 2%;
+      }
+    
+      .text-container h2 {
+        font-size: 28px;
+      }
+    
+      .text-container h3 {
+        font-size: 24px;
+      }
+    
+      .text-container p {
+        font-size: 18px;
+      }
+    }
