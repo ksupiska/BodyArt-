@@ -9,6 +9,12 @@ import HeaderTattooContainer from './components/HeaderTattoo';
 import HeaderPriceContainer from './components/HeaderPrice';
 import Price from './main/Price';
 
+import Reviews from './main/Reviews';
+import HeaderReviewsContainer from './components/HeaderReviews';
+
+import References from './main/References';
+import HeaderReferencesContainer from './components/HeaderReferences';
+
 import FooterContainer from './components/Footer';
 
 const AppContent: React.FC = () => {
@@ -18,10 +24,9 @@ const AppContent: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/tattoo" element={<TattooContainer />} />
         <Route path="/price" element={<Price />} />
-        {/* <Route path="/reviews" element={<Reviews />} /> */}
-        {/* <Route path="/references" element={<References />} /> */}
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/references" element={<References />} />
       </Routes>
-      {/* <FooterContainer /> */}
     </div>
   );
 };
@@ -57,6 +62,26 @@ function App() {
             <>
               <HeaderPriceContainer />
               <Price />
+              <FooterContainer />
+            </>
+          }
+        />
+        <Route
+          path="/reviews"
+          element={
+            <>
+              <HeaderReviewsContainer />
+              <Reviews />
+              <FooterContainer />
+            </>
+          }
+        />
+        <Route
+          path="/references"
+          element={
+            <>
+              <HeaderReferencesContainer />
+              <References />
               <FooterContainer />
             </>
           }
