@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './main/Home';
 import HeaderHomeContainer from './components/HeaderHome';
+import TattooContainer from './main/Tattoo';
+import HeaderTattooContainer from './components/HeaderTattoo';
 
 import FooterContainer from './components/Footer';
 
@@ -11,10 +13,10 @@ const AppContent: React.FC = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/tattoo" element={<Tattoo />} />
-        <Route path="/price" element={<Price />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/references" element={<References />} /> */}
+        <Route path="/tattoo" element={<TattooContainer />} />
+        {/* <Route path="/price" element={<Price />} /> */}
+        {/* <Route path="/reviews" element={<Reviews />} /> */}
+        {/* <Route path="/references" element={<References />} /> */}
       </Routes>
       {/* <FooterContainer /> */}
     </div>
@@ -26,12 +28,22 @@ function App() {
     <div>
       <Router>
         <Routes>
-        <Route
-          path="/"
+          <Route
+            path="/"
+            element={
+              <>
+                <HeaderHomeContainer />
+                <Home />
+                <FooterContainer />
+              </>
+            }
+          />
+          <Route
+          path="/tattoo"
           element={
             <>
-              <HeaderHomeContainer />
-              <Home />
+              <HeaderTattooContainer />
+              <TattooContainer />
               <FooterContainer />
             </>
           }
