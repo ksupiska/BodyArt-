@@ -1,0 +1,60 @@
+.carousel-container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Добавляем position: relative для позиционирования стрелок */
+}
+
+.slick-slide img {
+  width: 100%; /* Изменяем ширину картинок на 100% для полного заполнения контейнера */
+  border-radius: 8px;
+  display: block; /* Чтобы картинки отображались по середине */
+  margin: 0 auto; /* Центрируем картинки */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 2rem; /* Увеличиваем размер шрифта стрелок */
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px; /* Увеличиваем отступы вокруг текста */
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  width: 40px; /* Задаем фиксированную ширину для кнопок */
+  height: 40px; /* Задаем фиксированную высоту для кнопок */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Делаем кнопки круглыми */
+}
+
+.slick-prev {
+  left: 10px; /* Позиционируем стрелку "назад" слева */
+}
+
+.slick-next {
+  right: 10px; /* Позиционируем стрелку "вперед" справа */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 80%; /* Увеличиваем максимальную ширину контейнера для мобильных устройств */
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px; /* Уменьшаем размер стрелок для мобильных устройств */
+    height: 30px;
+    font-size: 1.5rem; /* Уменьшаем размер шрифта стрелок для мобильных устройств */
+    padding: 10px; /* Уменьшаем отступы вокруг текста */
+  }
+}
