@@ -1,0 +1,50 @@
+/* review-page.css */
+
+.container{
+  padding: 5%;
+}
+/* Стили для списка "Наш кодекс" */
+.code-of-conduct {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-of-conduct h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.code-of-conduct ul {
+  list-style-type: disc;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.code-of-conduct li {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.container p{
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .code-of-conduct {
+    padding: 15px;
+  }
+
+  .code-of-conduct h2 {
+    font-size: 1.5rem;
+  }
+
+  .code-of-conduct li {
+    font-size: 1rem;
+  }
+}
