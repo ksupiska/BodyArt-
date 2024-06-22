@@ -14,13 +14,6 @@ interface PhotoInfoProps {
   imgSrc: string;
 }
 
-const PhotoInfo: React.FC<PhotoInfoProps> = ({ name, text, imgSrc }) => (
-  <div className="photo-text">
-    <img src={imgSrc} alt={name} />
-    <h3>{name}</h3>
-    <p>{text}</p>
-  </div>
-);
 
 const PhotoInfoContainer: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
