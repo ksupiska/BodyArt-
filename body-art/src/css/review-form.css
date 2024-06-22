@@ -140,6 +140,28 @@ button:hover {
 .delete-button:hover {
   background-color: #7dbbfd;
 }
+.star-rating {
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  margin-bottom: 10px;
+}
+
+.star-rating label, .star-rating svg {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating svg {
+  transition: fill 0.2s ease;
+}
+
 
 @media (max-width: 600px) {
   .container {

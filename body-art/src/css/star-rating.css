@@ -1,0 +1,32 @@
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .star-rating label {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating svg {
+    transition: fill 0.2s ease;
+  }
+  
+  .star-input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+  
